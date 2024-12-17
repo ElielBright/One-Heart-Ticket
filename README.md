@@ -43,6 +43,8 @@ This boilerplate provides an easy-to-understand, modular code structure that can
  You can use create-react-app or Vite:
 
  bash
+
+ 
  npx create-react-app oneheart-react
  # OR using Vite
  npm create vite@latest oneheart-react --template react
@@ -66,6 +68,8 @@ Alternatively, use CSS-in-JS solutions like styled-components.
 After migrating to React, run the app using:
 
 bash
+
+
 npm start
 
 # Contributing
