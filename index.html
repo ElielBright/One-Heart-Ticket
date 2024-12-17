@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE HEART CARES - Ticket Purchasing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/apple-touch-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="header-content clearfix">
+            <div class="logo">
+                <img src="img/Logo-1.png" alt="One Heart Cares Logo">
+            </div>
+        <nav class="navbar">
+            
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#purchase" class="cta1">Purchase Tickets</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Empower Lives Through Healthcare: Buy Your Ticket Now!</h1>
+                <p>Every ticket you purchase helps provide essential healthcare services to those in need. Together, we can ensure that quality care is accessible to everyone, regardless of their circumstances.</p>
+                <a href="#" class="cta-btn">Donate Now</a>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Event Details -->
+    <section class="event-details fade-in" id="events">
+        <h2>Event Information</h2>
+        <p>Date: October 10, 2024 | Time: 6:00 PM | Venue: Community Hall, City Center</p> 
+        <h3>Ticket Types</h3>
+        <div class="tickets">
+            <div class="ticket">
+                <h4>General Admission</h4>
+                <p>Price: ¢50</p>
+            </div>
+            <div class="ticket">
+                <h4>VIP</h4>
+                <p>Price: ¢100</p>
+            </div>
+        </div>
+
+        <h3 id="purchase">Purchase Tickets</h3>
+        <form action="submit_ticket.php" method="post" class="ticket-form">
+            <h2>Purchase Your Ticket</h2>
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required autocomplete="name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required  autocomplete="email">
+            </div>
+            
+            <div class="form-group">
+                <label for="quantity">Ticket Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="promo">Promo Code (Optional)
+                <input type="text" id="promo" name="promo" placeholder="Enter promo code">
+            </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit">Credit/Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="mobile">Mobile Money</option>
+                </select>
+            </div>
+            
+            <div class="form-group terms">
+                <label>
+                    I agree to the <a href="#">terms and conditions</a>.
+                    <input type="checkbox" name="terms" required > 
+                </label>
+            </div>
+            
+            <button type="submit" class="cta2">Purchase Now</button>
+        </form>
+        
+    </section>
+    <!-- Testimonials or Impact Stories -->
+    <section class="testimonials">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial">
+            <p>"One Heart Cares helped our community get access to clean water. We are forever grateful!"</p>
+            <h4>- Sarah, Community Leader</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Thanks to One Heart Cares, I was able to get the education I needed to pursue my dreams."</p>
+            <h4>- John, Youth Beneficiary</h4>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container" id="contact">
+            <!-- Contact Information -->
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <p>123 Main st, City, Country</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Email: <a href="mailto:info@oneheartcares.org">info@oneheartcares.org</a></p>
+            </div>
+            <!-- Social Media Links -->
+            <div class="footer-section social-media">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+    
+            <!-- Newsletter Subscription -->
+            <div class="footer-section newsletter">
+                <h4>Subscribe to our Newsletter</h4>
+                <form action="subscribe.php" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required  autocomplete="email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <!-- Additional Links -->
+            <div class="footer-section additional-links">
+                <h4>Quick Links</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 ONE HEART CARES. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
